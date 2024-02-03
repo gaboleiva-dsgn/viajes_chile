@@ -1,329 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viajes Chile</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- adjuntamos archivo style.css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!-- implementamos css desde cdn de bootstrap -->
-    <script
-      src="https://kit.fontawesome.com/8bcc232b0f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body class="text-bg-dark">
-    <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-lg sticky-top text-bg-dark"
-      data-bs-theme="dark"
-    >
-      <div class="container">
-        <!-- navband -->
-        <a class="navbar-brand d-flex text-white align-items-center" href="#">
-          <img
-            src="assets/img/viajes.svg"
-            alt="Logo"
-            width="40"
-            height="40"
-            class="d-inline-block align-text-top me-1"
-          />
-          Viajes Chile</a
-        >
-        <!-- Navbar-menu -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavDropdown"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#quienes_somos"
-                >Quienes somos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#destacados">Destacados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- end nav bar -->
-    <header class="container-fluid px-0 top-0">
-      <!-- carrousel carouselAutoplaying -->
-      <div
-        id="carouselAutoplaying"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-touch="false"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="assets/img/carousel1.jpg"
-              class="d-block w-100"
-              alt="Desierto de Atacama"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/carousel2.jpg"
-              class="d-block w-100"
-              alt="Rapa Nui"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/carousel3.jpg"
-              class="d-block w-100"
-              alt="pinguino de humboldt"
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </header>
-    <!-- end to carousel carouselAutoplaying -->
+
+<head>
+  <!-- meta etiquetas -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="author" content="Gabriel Leiva" />
+  <meta name="description" content="Viaja por Chile con Viajes Chile" />
+  <meta name="keywords" content="viajes, turismo, chile, norte, centro, sur" />
+ <!-- implementamos bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- implementamos script fontawesome -->
+  <script src="https://kit.fontawesome.com/3c53bf413a.js" crossorigin="anonymous"></script>
+  <!-- adjuntamos archivo style.css local -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Viajes Chile</title>
+</head>
+
+<body class="text-bg-dark">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top text-bg-dark" data-bs-theme="dark">
     <div class="container">
-      <!-- div container para que el contenido tenga un margen -->
-      <!-- Sección quienes somos -->
-      <div id="quienes_somos" class="row mb-5">
-        <div class="col text-center mt-4">
-          <h1 class="fs-4 fw-light text-uppercase">¿Quienes somos?</h1>
-          <hr />
-        </div>
-        <section class="row col-12 mt-4">
-          <article class="col-md-4">
-            <div class="text-center bg-info py-1">
-              <i class="fa-solid fa-plane fa-2x"></i>
-            </div>
-            <p class="p-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-              fugit accusamus, odio sequi doloremque quibusdam, maiores
-              voluptates corrupti, laboriosam nihil explicabo reprehenderit vero
-              quasi illo inventore exercitationem atque rerum ad.
-            </p>
-          </article>
-          <article class="col-md-4 mt-4">
-            <div class="text-center bg-info py-1 d-md-none">
-              <i class="fa-solid fa-mountain fa-2x"></i>
-            </div>
-            <p class="p-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              nobis a exercitationem perferendis aliquid non? Quaerat
-              aspernatur, molestiae voluptate ullam eaque natus minima aut!
-              Molestiae iure odit ducimus beatae quisquam!
-            </p>
-            <div class="text-center bg-info py-1 d-none d-md-block">
-              <i class="fa-solid fa-mountain fa-2x"></i>
-            </div>
-          </article>
-          <article class="col-md-4 mt-4">
-            <div class="text-center bg-info py-1">
-              <i class="fa-solid fa-route fa-2x"></i>
-            </div>
-            <p class="p-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              alias, ipsa corrupti dolore iste sapiente impedit aliquam ullam
-              doloremque suscipit excepturi minima temporibus numquam, iusto
-              possimus nesciunt maxime cupiditate blanditiis.
-            </p>
-          </article>
-        </section>
+      <!-- navband -->
+      <a class="navbar-brand d-flex text-white align-items-center" href="#">
+        <img src="assets/img/viajes.svg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-1" />
+        Viajes Chile</a>
+      <!-- Navbar-menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#quienes_somos">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#destacados">Destacados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contacto">Contacto</a>
+          </li>
+        </ul>
       </div>
-      <!-- end quienes somos -->
-      <!-- Sección destacados -->
-      <div id="destacados" class="row mt-4">
-        <div class="col text-center mt-4">
-          <h1 class="fs-4 fw-light text-uppercase">Destacados</h1>
-          <hr />
-        </div>
-        <div class="card-group d-flex justify-content-center">
-          <div class="card text-bg-dark mx-2" style="width: 18rem">
-            <img
-              src="assets/img/card1.jpg"
-              class="card-img-top rounded-0"
-              alt="Imagen card uno"
-            />
-            <div class="card-body text-bg-info">
-              <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-                sint fugit iusto eius dolorem placeat facere nulla quaerat, a
-                nostrum quis eaque, pariatur laboriosam.
-              </p>
-            </div>
-          </div>
-          <div class="card text-bg-dark mx-2" style="width: 18rem">
-            <img
-              src="assets/img/card2.jpg"
-              class="card-img-top rounded-0"
-              alt="Imagen card dos"
-            />
-            <div class="card-body text-bg-info">
-              <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-                sint fugit iusto eius dolorem placeat facere nulla quaerat, a
-                nostrum quis eaque, pariatur laboriosam.
-              </p>
-            </div>
-          </div>
-          <div class="card text-bg-dark mx-2" style="width: 18rem">
-            <img
-              src="assets/img/card3.jpg"
-              class="card-img-top rounded-0"
-              alt="Imagen card tres"
-            />
-            <div class="card-body text-bg-info">
-              <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-                sint fugit iusto eius dolorem placeat facere nulla quaerat, a
-                nostrum quis eaque, pariatur laboriosam.
-              </p>
-            </div>
-          </div>
-          <div class="card text-bg-dark mx-2" style="width: 18rem">
-            <img
-              src="assets/img/card4.jpg"
-              class="card-img-top rounded-0"
-              alt="Imagen card cuatro"
-            />
-            <div class="card-body text-bg-info">
-              <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
-                sint fugit iusto eius dolorem placeat facere nulla quaerat, a
-                nostrum quis eaque, pariatur laboriosam.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end sección destacados -->
-      <!-- Formulario contacto -->
-      <div id="contacto" class="row mt-4">
-        <div class="col text-center mt-4">
-          <h1 class="fs-4 fw-light text-uppercase">Contacto</h1>
-          <hr />
-        </div>
-        <form>
-          <div class="mb-3">
-            <label for="inputNombre" class="form-label">Nombre</label>
-            <input type="nombre" class="form-control" id="inputNombre" />
-          </div>
-          <div class="mb-3">
-            <label for="inputAsunto" class="form-label">Asunto</label>
-            <input type="asunto" class="form-control" id="inputAsunto" />
-          </div>
-          <div class="mb-3">
-            <label for="textareaMensaje" class="form-label">Mensaje</label>
-            <textarea
-              class="form-control"
-              id="textareaMensaje"
-              rows="6"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-info text-white">Enviar</button>
-        </form>
-      </div>
-      <!-- end formulario contacto -->
     </div>
-    <!-- cierre de container -->
-    <footer class="bg-info mt-5 text-white">
-      <div class="container">
-        <div class="row py-4">
-          <div class="col-6">
-            <a href="#" class="text-white text-decoration-none"
-              ><h3 class="text-uppercase">Viajes Chile</h3></a
-            >
+  </nav>
+  <!-- end nav bar -->
+  <header class="container-fluid px-0 top-0">
+    <!-- carrousel carouselAutoplaying -->
+    <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Desierto de Atacama" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Rapa Nui" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="pinguino de humboldt" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <!-- end to carousel carouselAutoplaying -->
+  <div class="container">
+    <!-- div container para que el contenido tenga un margen -->
+    <!-- Sección quienes somos -->
+    <div id="quienes_somos" class="row mb-5">
+      <div class="col text-center mt-4">
+        <h1 class="fs-4 fw-light text-uppercase">¿Quienes somos?</h1>
+        <hr />
+      </div>
+      <section class="row col-12 mt-4">
+        <article class="col-md-4">
+          <div class="text-center bg-info py-1">
+            <i class="fa-solid fa-plane fa-2x"></i>
           </div>
-          <div class="col-6 text-end">
-            <a href="https://github.com/" target="_blank" class="text-white"
-              ><i class="fa-brands fa-square-github fa-2x ms-2"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              class="text-white"
-              ><i class="fa-brands fa-linkedin fa-2x ms-2"></i
-            ></a>
-            <a
-              href="https://twitter.com/home"
-              target="_blank"
-              class="text-white"
-              ><i class="fa-brands fa-square-twitter fa-2x ms-2"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/"
-              target="_blank"
-              class="text-white"
-              ><i class="fa-brands fa-square-facebook fa-2x ms-2"></i
-            ></a>
+          <p class="p-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+            fugit accusamus, odio sequi doloremque quibusdam, maiores
+            voluptates corrupti, laboriosam nihil explicabo reprehenderit vero
+            quasi illo inventore exercitationem atque rerum ad.
+          </p>
+        </article>
+        <article class="col-md-4 mt-4">
+          <div class="text-center bg-info py-1 d-md-none">
+            <i class="fa-solid fa-mountain fa-2x"></i>
+          </div>
+          <p class="p-2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+            nobis a exercitationem perferendis aliquid non? Quaerat
+            aspernatur, molestiae voluptate ullam eaque natus minima aut!
+            Molestiae iure odit ducimus beatae quisquam!
+          </p>
+          <div class="text-center bg-info py-1 d-none d-md-block">
+            <i class="fa-solid fa-mountain fa-2x"></i>
+          </div>
+        </article>
+        <article class="col-md-4 mt-4">
+          <div class="text-center bg-info py-1">
+            <i class="fa-solid fa-route fa-2x"></i>
+          </div>
+          <p class="p-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            alias, ipsa corrupti dolore iste sapiente impedit aliquam ullam
+            doloremque suscipit excepturi minima temporibus numquam, iusto
+            possimus nesciunt maxime cupiditate blanditiis.
+          </p>
+        </article>
+      </section>
+    </div>
+    <!-- end quienes somos -->
+    <!-- Sección destacados -->
+    <div id="destacados" class="row mt-4">
+      <div class="col text-center mt-4">
+        <h1 class="fs-4 fw-light text-uppercase">Destacados</h1>
+        <hr />
+      </div>
+      <div class="card-group d-flex justify-content-center">
+        <div class="card text-bg-dark mx-2" style="width: 18rem">
+          <img src="assets/img/card1.jpg" class="card-img-top rounded-0" alt="Imagen card uno" />
+          <div class="card-body text-bg-info">
+            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              sint fugit iusto eius dolorem placeat facere nulla quaerat, a
+              nostrum quis eaque, pariatur laboriosam.
+            </p>
+          </div>
+        </div>
+        <div class="card text-bg-dark mx-2" style="width: 18rem">
+          <img src="assets/img/card2.jpg" class="card-img-top rounded-0" alt="Imagen card dos" />
+          <div class="card-body text-bg-info">
+            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              sint fugit iusto eius dolorem placeat facere nulla quaerat, a
+              nostrum quis eaque, pariatur laboriosam.
+            </p>
+          </div>
+        </div>
+        <div class="card text-bg-dark mx-2" style="width: 18rem">
+          <img src="assets/img/card3.jpg" class="card-img-top rounded-0" alt="Imagen card tres" />
+          <div class="card-body text-bg-info">
+            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              sint fugit iusto eius dolorem placeat facere nulla quaerat, a
+              nostrum quis eaque, pariatur laboriosam.
+            </p>
+          </div>
+        </div>
+        <div class="card text-bg-dark mx-2" style="width: 18rem">
+          <img src="assets/img/card4.jpg" class="card-img-top rounded-0" alt="Imagen card cuatro" />
+          <div class="card-body text-bg-info">
+            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              sint fugit iusto eius dolorem placeat facere nulla quaerat, a
+              nostrum quis eaque, pariatur laboriosam.
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/script.js"></script>
-    <!-- adjuntamos archivo script.js  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <!-- implementamos archivo popper desde cdn de bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-    <!-- implementamos archivo bootstrap.min.js desde cdn de bootstrap -->
-  </body>
+    </div>
+    <!-- end sección destacados -->
+    <!-- Formulario contacto -->
+    <div id="contacto" class="row mt-4">
+      <div class="col text-center mt-4">
+        <h1 class="fs-4 fw-light text-uppercase">Contacto</h1>
+        <hr />
+      </div>
+      <form>
+        <div class="mb-3">
+          <label for="inputNombre" class="form-label">Nombre</label>
+          <input type="nombre" class="form-control" id="inputNombre" />
+        </div>
+        <div class="mb-3">
+          <label for="inputAsunto" class="form-label">Asunto</label>
+          <input type="asunto" class="form-control" id="inputAsunto" />
+        </div>
+        <div class="mb-3">
+          <label for="textareaMensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="textareaMensaje" rows="6"></textarea>
+        </div>
+        <button type="submit" class="btn btn-info text-white">Enviar</button>
+      </form>
+    </div>
+    <!-- end formulario contacto -->
+  </div>
+  <!-- cierre de container -->
+  <footer class="bg-info mt-5 text-white">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-6">
+          <a href="#" class="text-white text-decoration-none">
+            <h3 class="text-uppercase">Viajes Chile</h3>
+          </a>
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://github.com/" target="_blank" class="text-white"><i
+              class="fa-brands fa-square-github fa-2x ms-2"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" class="text-white"><i
+              class="fa-brands fa-linkedin fa-2x ms-2"></i></a>
+          <a href="https://twitter.com/home" target="_blank" class="text-white"><i
+              class="fa-brands fa-square-twitter fa-2x ms-2"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" class="text-white"><i
+              class="fa-brands fa-square-facebook fa-2x ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  <!-- adjuntamos archivo script.js  -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <!-- implementamos archivo popper desde cdn de bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!-- implementamos archivo bootstrap.min.js desde cdn de bootstrap -->
+</body>
+
 </html>
