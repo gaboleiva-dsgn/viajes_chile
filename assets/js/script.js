@@ -11,3 +11,8 @@ $(".nav-link").click(function (event) {
         }, 1000); 
     }
 });
+
+$("#btn_submit").click(function (e){
+    e.preventDefault();
+    alert("Su mensaje fue enviado satisfactoriamente")
+});

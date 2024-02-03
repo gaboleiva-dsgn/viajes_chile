@@ -49,8 +49,7 @@
         </ul>
       </div>
     </div>
-  </nav>
-  <!-- end nav bar -->
+  </nav>   <!-- fin nav bar -->
   <header class="container-fluid px-0 top-0">
     <!-- carrousel carouselAutoplaying -->
     <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
@@ -75,20 +74,18 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div>   <!-- fin to carousel carouselAutoplaying -->
   </header>
-  <!-- end to carousel carouselAutoplaying -->
-  <div class="container">
-    <!-- div container para que el contenido tenga un margen -->
+  <div class="container">   <!-- div container para que el contenido tenga un margen -->
     <!-- Sección quienes somos -->
-    <div id="quienes_somos" class="row mb-5">
+    <div id="quienes_somos" class="row mb-5 d-none d-md-block">
       <div class="col text-center mt-4">
         <h1 class="fs-4 fw-light text-uppercase">¿Quienes somos?</h1>
         <hr />
       </div>
-      <section class="row col-12 mt-4">
+      <section class="row mt-4 text-center">
         <article class="col-md-4">
-          <div class="text-center bg-info py-1">
+          <div class="bg-info py-1">
             <i class="fa-solid fa-plane fa-2x"></i>
           </div>
           <p class="p-2">
@@ -99,16 +96,13 @@
           </p>
         </article>
         <article class="col-md-4 mt-4">
-          <div class="text-center bg-info py-1 d-md-none">
-            <i class="fa-solid fa-mountain fa-2x"></i>
-          </div>
           <p class="p-2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
             nobis a exercitationem perferendis aliquid non? Quaerat
             aspernatur, molestiae voluptate ullam eaque natus minima aut!
             Molestiae iure odit ducimus beatae quisquam!
           </p>
-          <div class="text-center bg-info py-1 d-none d-md-block">
+          <div class="bg-info py-1 d-none d-md-block">
             <i class="fa-solid fa-mountain fa-2x"></i>
           </div>
         </article>
@@ -124,16 +118,15 @@
           </p>
         </article>
       </section>
-    </div>
-    <!-- end quienes somos -->
+    </div>   <!-- fin quienes somos -->
     <!-- Sección destacados -->
     <div id="destacados" class="row mt-4">
       <div class="col text-center mt-4">
         <h1 class="fs-4 fw-light text-uppercase">Destacados</h1>
         <hr />
       </div>
-      <div class="card-group d-flex justify-content-center">
-        <div class="card text-bg-dark mx-2" style="width: 18rem">
+      <div class="row row-cols-1 row-cols row-cols-sm-2 row-cols-lg-4">
+        <div class="card text-bg-dark">
           <img src="assets/img/card1.jpg" class="card-img-top rounded-0" alt="Imagen card uno" />
           <div class="card-body text-bg-info">
             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
@@ -144,7 +137,7 @@
             </p>
           </div>
         </div>
-        <div class="card text-bg-dark mx-2" style="width: 18rem">
+        <div class="card text-bg-dark">
           <img src="assets/img/card2.jpg" class="card-img-top rounded-0" alt="Imagen card dos" />
           <div class="card-body text-bg-info">
             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
@@ -155,7 +148,7 @@
             </p>
           </div>
         </div>
-        <div class="card text-bg-dark mx-2" style="width: 18rem">
+        <div class="card text-bg-dark">
           <img src="assets/img/card3.jpg" class="card-img-top rounded-0" alt="Imagen card tres" />
           <div class="card-body text-bg-info">
             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
@@ -166,7 +159,7 @@
             </p>
           </div>
         </div>
-        <div class="card text-bg-dark mx-2" style="width: 18rem">
+        <div class="card text-bg-dark">
           <img src="assets/img/card4.jpg" class="card-img-top rounded-0" alt="Imagen card cuatro" />
           <div class="card-body text-bg-info">
             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
@@ -178,15 +171,14 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- end sección destacados -->
+    </div>   <!-- fin sección destacados -->
     <!-- Formulario contacto -->
     <div id="contacto" class="row mt-4">
-      <div class="col text-center mt-4">
+      <div class="col-12 text-center mt-4">
         <h1 class="fs-4 fw-light text-uppercase">Contacto</h1>
         <hr />
       </div>
-      <form>
+      <form class="col">
         <div class="mb-3">
           <label for="inputNombre" class="form-label">Nombre</label>
           <input type="nombre" class="form-control" id="inputNombre" />
@@ -199,12 +191,10 @@
           <label for="textareaMensaje" class="form-label">Mensaje</label>
           <textarea class="form-control" id="textareaMensaje" rows="6"></textarea>
         </div>
-        <button type="submit" class="btn btn-info text-white">Enviar</button>
+        <button id="btn_submit" type="submit" class="btn btn-info text-white">Enviar</button>
       </form>
-    </div>
-    <!-- end formulario contacto -->
-  </div>
-  <!-- cierre de container -->
+    </div>   <!-- fin formulario contacto -->
+  </div>   <!-- cierre de container -->
   <footer class="bg-info mt-5 text-white">
     <div class="container">
       <div class="row py-4">
@@ -229,16 +219,16 @@
   <!-- scripts -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="assets/js/script.js"></script>
   <!-- adjuntamos archivo script.js  -->
+    <script src="assets/js/script.js"></script>
+  <!-- implementamos archivo popper desde cdn de bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-  <!-- implementamos archivo popper desde cdn de bootstrap -->
+  <!-- implementamos archivo bootstrap.min.js desde cdn de bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-  <!-- implementamos archivo bootstrap.min.js desde cdn de bootstrap -->
 </body>
 
 </html>
