@@ -19,9 +19,12 @@
       crossorigin="anonymous"
     />
     <!-- implementamos Fuente Roboto de GoogleFont -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- implementamos script fontawesome -->
     <script
       src="https://kit.fontawesome.com/3c53bf413a.js"
@@ -39,7 +42,10 @@
     >
       <div class="container">
         <!-- navband -->
-        <a class="navbar-brand d-flex text-white align-items-center text-uppercase roboto_medium" href="#">
+        <a
+          class="navbar-brand d-flex text-white align-items-center text-uppercase roboto_medium"
+          href="#"
+        >
           <img
             src="assets/img/viajes.svg"
             alt="Logo"
@@ -142,7 +148,9 @@
       <!-- Sección quienes somos se oculta en versión mobile -->
       <div id="quienes_somos" class="row mb-5 d-none d-md-block">
         <div class="col text-center mt-4">
-          <h1 class="fs-4 fw-light text-uppercase roboto_medium">¿Quienes somos?</h1>
+          <h1 class="fs-4 fw-light text-uppercase roboto_medium">
+            ¿Quienes somos?
+          </h1>
           <hr />
         </div>
         <section class="row mt-4 text-center">
@@ -196,7 +204,9 @@
               alt="Imagen card uno"
             />
             <div class="card-body text-bg-info">
-              <h5 class="card-title roboto_medium">Lorem ipsum dolor sit amet</h5>
+              <h5 class="card-title roboto_medium">
+                Lorem ipsum dolor sit amet
+              </h5>
               <p class="card-text roboto_regular">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
                 sint fugit iusto eius dolorem placeat facere nulla quaerat, a
@@ -211,7 +221,9 @@
               alt="Imagen card dos"
             />
             <div class="card-body text-bg-info">
-              <h5 class="card-title roboto_medium">Lorem ipsum dolor sit amet</h5>
+              <h5 class="card-title roboto_medium">
+                Lorem ipsum dolor sit amet
+              </h5>
               <p class="card-text roboto_regular">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
                 sint fugit iusto eius dolorem placeat facere nulla quaerat, a
@@ -226,7 +238,9 @@
               alt="Imagen card tres"
             />
             <div class="card-body text-bg-info">
-              <h5 class="card-title roboto_medium">Lorem ipsum dolor sit amet</h5>
+              <h5 class="card-title roboto_medium">
+                Lorem ipsum dolor sit amet
+              </h5>
               <p class="card-text roboto_regular">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
                 sint fugit iusto eius dolorem placeat facere nulla quaerat, a
@@ -241,7 +255,9 @@
               alt="Imagen card cuatro"
             />
             <div class="card-body text-bg-info">
-              <h5 class="card-title roboto_medium">Lorem ipsum dolor sit amet</h5>
+              <h5 class="card-title roboto_medium">
+                Lorem ipsum dolor sit amet
+              </h5>
               <p class="card-text roboto_regular">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
                 sint fugit iusto eius dolorem placeat facere nulla quaerat, a
@@ -260,22 +276,32 @@
         </div>
         <form class="col">
           <div class="mb-3">
-            <label for="inputNombre" class="form-label roboto_regular">Nombre</label>
+            <label for="inputNombre" class="form-label roboto_regular"
+              >Nombre</label
+            >
             <input type="nombre" class="form-control" id="inputNombre" />
           </div>
           <div class="mb-3">
-            <label for="inputAsunto" class="form-label roboto_regular">Asunto</label>
+            <label for="inputAsunto" class="form-label roboto_regular"
+              >Asunto</label
+            >
             <input type="asunto" class="form-control" id="inputAsunto" />
           </div>
           <div class="mb-3">
-            <label for="textareaMensaje" class="form-label roboto_regular">Mensaje</label>
+            <label for="textareaMensaje" class="form-label roboto_regular"
+              >Mensaje</label
+            >
             <textarea
               class="form-control"
               id="textareaMensaje"
               rows="6"
             ></textarea>
           </div>
-          <button id="btn_submit" type="submit" class="btn btn-info text-white roboto_regular">
+          <button
+            id="btn_submit"
+            type="submit"
+            class="btn btn-info text-white roboto_regular"
+          >
             Enviar
           </button>
         </form>
@@ -289,20 +315,48 @@
         <div class="row py-4">
           <div class="col-5 offset-1">
             <!-- h3 con función popover -->
-              <h3 class="btn_popover text-uppercase roboto_medium w-50" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Somos el mejor pais de Chile!!!">Viajes Chile</h3>
+            <h3
+              class="btn_popover text-uppercase roboto_medium w-50"
+              data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-content="Somos el mejor pais de Chile!!!"
+            >
+              Viajes Chile
+            </h3>
           </div>
           <div class="col-5 text-end">
             <!-- iconos de RRSS con función tooltip -->
-            <i class="fa-brands fa-square-github fa-2x ms-2" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Ir a GitHub"></i>
-            <i class="fa-brands fa-linkedin fa-2x ms-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ir a Linkedin"></i>
-            <i class="fa-brands fa-square-twitter fa-2x ms-2" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Ir a Twitter"></i>
-            <i class="fa-brands fa-square-facebook fa-2x ms-2" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right"></i>
+            <i
+              class="fa-brands fa-square-github fa-2x ms-2"
+              data-bs-toggle="tooltip"
+              data-bs-placement="left"
+              data-bs-title="Ir a GitHub"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-2x ms-2"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Ir a Linkedin"
+            ></i>
+            <i
+              class="fa-brands fa-square-twitter fa-2x ms-2"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Ir a Twitter"
+            ></i>
+            <i
+              class="fa-brands fa-square-facebook fa-2x ms-2"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title="Tooltip on right"
+            ></i>
           </div>
         </div>
       </div>
-    </footer> <!-- fin footer -->
+    </footer>
+    <!-- fin footer -->
     <!-- scripts -->
-<!-- implementamos archivo jquery versión 3.7.1  -->
+    <!-- implementamos archivo jquery versión 3.7.1  -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -320,7 +374,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-     <!-- adjuntamos archivo script.js  -->
-     <script src="assets/js/script.js"></script>
+    <!-- adjuntamos archivo script.js  -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
