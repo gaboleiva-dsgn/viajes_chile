@@ -1,0 +1,17 @@
+/* se crean clases css para la fuente Roboto */
+.roboto_regular {
+    font-family: "roboto";
+    font-weight: 400 !important;
+}
+.roboto_medium {
+    font-family: "roboto";
+    font-weight: 500 !important;
+}
+/* Se le da espaciado entre las letras del menu */
+.nav-link {
+    letter-spacing: 0.07rem;
+}
+/* Se implemanta Pointer para detectar donde hay acciones */
+i, .btn_popover {
+    cursor: pointer;
+}
